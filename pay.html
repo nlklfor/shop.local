@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&family=Readex+Pro:wght@200;400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+<body>
+    <div class="pay">
+        <div class="info-payment">
+            <div class="col-lg-2 col-6">
+                <a href="index.php" class="logo-link">
+                    <img width="400"  src="img/shop-seeklogo.svg" alt="logo: OnlineShop" class="logo-image">
+                </a>
+            </div>
+            <div class="info-value">
+                <!-- Price -->
+            </div>
+            <div class="info-buttons">
+                <a href="">
+                    <button class="apple-pay"> 
+                        <img width="50" src="./img/apple.png" alt="">
+                    </button>
+                </a>
+                <a href="">
+                    <button class="google-pay"> 
+                        <img width="55" src="./img/google.png" alt="">
+                    </button>
+                </a>
+            </div>
+            <div class="info-method">
+            <p>
+                Вы используете медот оплаты картой
+            </p>
+                <div class="card-method">
+                    <img width="70" src="./img/card.png" alt="">
+                <p>Платежная карта </p>
+                </div>
+            </div>
+    </div>
+
+    <form class="card-payment" action="./index.php">
+        <div class="card-pay">
+            <img src="./img/visa-card.png" alt="">
+            <div class="card-data" action="/action_page.php">
+                <p class="card-number">Номер карты</p>
+                <input type="text" placeholder="▯▯▯▯▯▯▯▯▯▯▯▯▯▯▯▯" required>
+                <p class="card-mm">ММ/ГГ</p>
+                <input type="text" placeholder="▯▯/▯▯" required>
+                <p class="card-cvv">CVV/CVC</p>
+                <input type="text" placeholder="▯▯▯" required>
+                <button class="button-pay" type="submit" id="payBtn" >
+                     Оплатить
+                </button>
+            </div>
+        </div>
+        <div class="email-pay" >
+            <input type="text" placeholder="example@gmail.com" required>
+        </div>
+        
+        
+    </form>
+    
+    
+    </div>
+
+
+	
+</body> 
+</html>
