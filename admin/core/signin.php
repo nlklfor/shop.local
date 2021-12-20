@@ -23,12 +23,12 @@
         }
         else{
             $_SESSION['message'] = 'Invalid login or password';
-            header('Location: ../../index.php');
+            header('Location: ../../log.php');
         }
     }
     else{
         $_SESSION['message'] = 'You Already Logged in';
-        header('Location: ../../index.php');
+        header('Location: ../../log.php');
     }
 
 

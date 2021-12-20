@@ -1184,6 +1184,27 @@ button {
   font-family: "Raleway", sans-serif;
   font-size: 22px;
   font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: #2b2b2b 2px solid;
+}
+
+.login-button {
+  max-width: 200px;
+  padding: 10px 30px 10px 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: #009bec;
+  border: #009bec 1px solid;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  margin-bottom: 20px;
+}
+.login-button:hover, .login-button:focus, .login-button:active {
+  background-color: #009bec;
+  color: white;
 }
 
 form {
@@ -1194,9 +1215,33 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+form .col-md-6 {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 form .col-md-6 input {
   border: #009bec 2px solid;
+}
+form .col-md-6 label {
+  padding-right: 5px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+form .col-md-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
 }
 form .col-md-12 input {
   border: #009bec 2px solid;
@@ -1204,9 +1249,30 @@ form .col-md-12 input {
 form .col-md-12 .img {
   border: none;
 }
+form .col-md-12 label {
+  padding-right: 5px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+form .col-12 button {
+  padding: 10px 30px 10px 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: #009bec;
+  border: #009bec 1px solid;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  margin-bottom: 20px;
+}
+form .col-12 button:hover, form .col-12 button:focus, form .col-12 button:active {
+  background-color: #009bec;
+  color: white;
+}
 
 .section-registration {
   display: none;
+  margin-top: 400px;
 }
 
 .section-registration--active {

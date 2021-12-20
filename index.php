@@ -36,27 +36,7 @@
 <!-- class="show-goods" -->
 
 <body id="body">
-	<section class="section-registration section-registration--active">
-        <div class="section-inner">
-            <form action="./admin/core/signin.php" method="post" class="login-form">
-                <label for="">Login</label>
-                <input name="login" type="text" placeholder="Type Your Login">
-                <label for="">Password</label>
-                <input name="password" type="password" placeholder="Type Your Password">
-                <button type="submit">Login</button>
-                <p>
-                    Don't have an account?
-                    <a href="./registration.php">Create</a>
-                </p>
-                <p class="msg">
-                    <?php
-                        echo($_SESSION['message']); 
-                        unset($_SESSION['message']);
-                    ?>
-                </p>
-            </form>
-        </div>
-    </section>
+	
 	<header class="container header px-4 px-md-0">
 		<div class="row justify-content-between align-items-center">
 			<div class="col-lg-2 col-6">
@@ -120,7 +100,7 @@
                 }
                 else{
                     echo '
-                        <button class="login-button">LogIn</button>
+                        <a href="log.php"> <button class="login-button">LogIn</button> </a> 
                     ';
                 }
 
@@ -210,8 +190,16 @@
 		<div class="row mb-4">
 			<div class="col-xl-6">
 				<div class="card card-1 mb-4">
-					<h3 class="card-title">Fashion Month Ready in Capital Shop</h3>
-					<p class="card-text">Bags & Acsessories & Lingerie & Sportswear & Beauty & Swimwear</p>
+					<h3 class="card-title">
+								<?php
+									echo $vars['first-card__title'];
+								?>
+					</h3>
+					<p class="card-text">
+								<?php
+									echo $vars['first-card__subtitle'];
+								?>
+					</p>
 					<button class="button">
 						<span class="button-text">View all</span>
 						<img src="img/arrow.svg" alt="icon: arrow" class="button-icon">
@@ -222,8 +210,16 @@
 			<!-- /.col-6 -->
 			<div class="col-xl-6">
 				<div class="card card-2 mb-4">
-					<h3 class="card-title text-light">Catch the Sun: Spring Break Styles From $25.99</h3>
-					<p class="card-text text-light">Sweaters & Hoodies & Puffer Jackets & Coats and Jackets & Knit</p>
+					<h3 class="card-title text-light">
+								<?php
+									echo $vars['second-card__title'];
+								?>
+					</h3>
+					<p class="card-text text-light">
+								<?php
+									echo $vars['second-card__subtitle'];
+								?>
+					</p>
 					<button class="button">
 						<span class="button-text">View all</span>
 						<img src="img/arrow.svg" alt="icon: arrow" class="button-icon">
@@ -235,8 +231,16 @@
 			<div class="col-xl-9 col-lg-6 mb-4">
 				<div class="card card-3">
 					<span class="label">Bestseller</span>
-					<h3 class="card-title large">Basketball</h3>
-					<p class="card-text large">Just Play It!</p>
+					<h3 class="card-title large">
+								<?php
+									echo $vars['third-card__title'];
+								?>
+					</h3>
+					<p class="card-text large">
+								<?php
+									echo $vars['third-card__subtitle'];
+								?>
+					</p>
 					<button class="button add-to-cart" data-id="002">
 						<span class="button-price">$59</span>
 						<span class="button-text">Shop now</span>
@@ -247,8 +251,16 @@
 			<!-- /.col-9 -->
 			<div class="col-xl-3 col-lg-6">
 				<div class="card card-4">
-					<h3 class="card-title text-light mw-160">Printed Shirt</h3>
-					<p class="card-text text-light">Pink/Sky Blue/Yellow</p>
+					<h3 class="card-title text-light mw-160">
+								<?php
+									echo $vars['fourth-card__title'];
+								?>
+					</h3>
+					<p class="card-text text-light">
+								<?php
+									echo $vars['fourth-card__subtitle'];
+								?>
+					</p>
 					<button class="button add-to-cart button-four" data-id="009">
 						<span class="button-price">$19</span>
 						<span class="button-text">Shop now</span>

@@ -25,27 +25,6 @@
 <!-- class="show-goods" -->
 
 <body id="body">
-<section class="section-registration section-registration--active">
-        <div class="section-inner">
-            <form action="./admin/core/signin.php" method="post" class="login-form">
-                <label for="">Login</label>
-                <input name="login" type="text" placeholder="Type Your Login">
-                <label for="">Password</label>
-                <input name="password" type="password" placeholder="Type Your Password">
-                <button type="submit">Login</button>
-                <p>
-                    Don't have an account?
-                    <a href="./registration.php">Create</a>
-                </p>
-                <p class="msg">
-                    <?php
-                        echo($_SESSION['message']); 
-                        unset($_SESSION['message']);
-                    ?>
-                </p>
-            </form>
-        </div>
-    </section>
 	<header class="container header px-4 px-md-0">
 		<div class="row justify-content-between align-items-center">
 			<div class="col-lg-2 col-6">
